@@ -63,7 +63,7 @@ html, body {
 
 h1, h2, h3, h4, h5 {
     font-size: 18px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -97,10 +97,11 @@ nav{
 nav img{
     width: 10rem;
     display: flex;
-    flex-wrap: row;
+    /*flex-wrap: row;*/
     justify-content:flex-start;
+    align-items: flex-start;
     margin-bottom: 20px;
-    margin-right: 20px;
+    margin-right: 35px;
     margin-top: 15px;
 }
 
@@ -127,128 +128,105 @@ nav a{
 
 
 /*Body styles*/
-.container {
+.about-container{
     width: 800px;
     margin: 0 auto;
 }
 
-.top-content {
+.top-about {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
     border-bottom: 1px dashed black;
+    margin-left:10px;
 }
 
-.top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
+.top-about .text-container{
+    width: 98%;
+    padding: 0 0.5%;
+    padding-bottom: 3%;
 }
 
-
-/*body-middle content-and boxes style*/
-.middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
-}
-
-.middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
-}
-
-.middle-content .boxes {
+/*body--middle-about styles*/
+.middle-about{
+    /*margin-bottom: 20px;*/
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    padding: 24px;
+    padding-bottom: 0px;
+    /*this display flex will adjust the boxes so it's
+    side by side*/
 }
 
-.middle-content .boxes .box{
-    width: 12.5%;
-    height: 100px;
-    /*background:black-- bro i had to get rid of this
-    and then do what i did below to change colors. 
-    rip on getting thrown off when the boxes turned white*/
-    margin: 20px 2.5%;
-    color: white;
+.middle-about .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px dashed black;
+    width: 350px;
+    /*margin: 5px;*/
+    margin-bottom: 40px;
+    /*this display flex messes with the stuff INSIDE
+    each container
+    */
+}
+
+/*how tf do i get each container to be side 
+by side--fixed*/
+
+
+/* idk if i need this
+.container .img-container{
     display: flex;
     align-items: center;
-    justify-content: center;
+} --nah
+*/
+
+.container .img-container img{
+    width: 350px;
 }
 
-.box1{
-    background: teal;
-}
-/*how do i make these boxes different colors without having to 
-give them the same code over and over*/
-.box2{
-    background: gold;
+.text-container {
+    /*padding-top: 10px;*/
+    line-height: 40px;
+    padding-bottom: 15px;
 }
 
-.box3{
-    background: cadetblue;
+.text-container a{
+    border: 2px solid grey;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 4px 11px;
 }
 
-.box4{
-    background: coral;
+.text-container p{
+    margin-bottom: 10px;
 }
-
-.box5{
-    background: crimson;
-}
-
-.box6{
-    background: forestgreen;
-}
-
-.box7{
-    background: darkorchid;
-}
-
-.box8{
-    background: hotpink;
-}
-
-.box9{
-    background: indigo;
-}
-
-.box10{
-    background: dodgerblue;
-}
-
-
 /*bottom styles*/
-.bottom-content {
-    display: flex;
-    margin: 0 2% 20px;
-    justify-content: space-around;
+.bottom-about .text-container{
+    padding: 0px 30px 50px;
 }
 
-.bottom-content .text-container {
-    padding-right: 4%;
-}
-
-.bottom-content .text-container:last-child {
-    padding-right: 0;
-}
-
+/*footer styles*/
 footer {
-    width: 100%;
-    background: black;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-start;
 }
 
 footer nav {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+    padding-right: 250px;
 }
 
-footer nav a {
+footer nav a{
     color: white;
-    text-decoration: none;
+    width: 100px;
+    padding-top: 20px;
 }
